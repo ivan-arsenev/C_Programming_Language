@@ -1,5 +1,9 @@
 #include <stdio.h>
+#include <stdlib.h>
 
+#ifdef _WIN32
+#define WINPAUSE system("pause")
+#endif
 // declares the parameter types and names called function prototype
 int power(int m, int n);
 
@@ -7,6 +11,8 @@ int main()
 {
     for (int i = 0; i < 10; ++i)
         printf("%d %d %d\n", i, power(2, i), power(-3, i));
+
+    WINPAUSE;
     return 0;
 }
 
