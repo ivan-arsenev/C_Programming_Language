@@ -5,7 +5,7 @@ int getline(char line[], int maxline);
 void copy(char to[], char from[]);
 
 // print longest input line
-main()
+int main()
 {
     int len;               // current line length
     int max;               // maximum length seen so far
@@ -26,7 +26,7 @@ main()
     return 0;
 }
 
-// getline: read a line into s, return length
+// getline: read a line into s, return length alse puts char '\0' to end
 int getline(char s[], int lim)
 {
     int c, i;
