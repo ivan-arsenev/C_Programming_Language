@@ -57,7 +57,7 @@ void copy()
     extern char line[], longest[];
 
     i = 0;
-    while ((longest = line[i]) != '\0')
+    while ((longest[i] = line[i]) != '\0')
     {
         ++i;
     }
